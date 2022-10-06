@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(22, 196, 202); text-align: center;">
+    <h1 id="ad"></h1>
+    <input id="urunsayisi" type="number" name="" value="">
+    <button onclick="buton()">Adet</button>
+
+    <h1>Ürün Adedi</h1>
+    <p id="adet"></p>
+
+    <h1>Ürün Fiyatı</h1>
+    <p id="fiyat"></p>
+
+    <h1>Toplam Fiyat</h1>
+    <p id="tf"></p>
+
+    <script>
+        var x =5;
+        let y =15;
+        const z = {firstName:"john", lastName:"Doe"}
+
+        var urunAdi = "T shirt"
+        var urunAdedi = 500;
+        var urunFiyati = 15;
+        
+        var toplamFiyat =urunFiyati * urunAdedi;
+
+        console.log(toplamFiyat)
+
+
+        console.log(x+y+z)
+
+        document.getElementById("urunsayisi").value = urunAdedi;
+        document.getElementById("ad").innerHTML=urunAdi;
+        document.getElementById("adet").innerHTML=urunAdedi;
+        document.getElementById("fiyat").innerHTML=urunFiyati;
+        document.getElementById("tf").innerHTML=toplamFiyat;
+
+        function button(){
+            document.getElementById("urunsayisi").value = urunAdedi;
+        }
+
+
+    </script>
+</body>
+</html>
